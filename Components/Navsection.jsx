@@ -20,7 +20,7 @@ export const Navsection = () => {
 
   <>
         <div className="Navbar m-6 text-center">
-          <ul className="flex gap-3 items-center">
+          <ul className="flex gap-3 items-center justify-center">
             <li className="p-3 border-x border-b-gray-400  hover:text-amber-200 ">
               <NavLink
                 to="/Resume"
