@@ -54,7 +54,7 @@ li{
     .animate-fly {
         animation: fly 1s forwards;
     }
-    @media screen and (min-width: 500px)
+    @media screen and (min-width: 530px)
     {
         .desktop{
             display:none; 
@@ -64,9 +64,9 @@ li{
         }
     }
    /* mobile */
-    @media screen and (max-width: 400px) {
+    @media screen and (max-width: 500px) {
         *{
-            font-size: 11px;
+            font-size: 12px;
         }
         .PersonalInfo{
             text-align: center;
