@@ -1,0 +1,109 @@
+.PersonalInfo , .Navbar {
+    margin-top:2rem;
+    margin-inline:6rem;
+}
+
+html,body{
+    background-color: gainsboro
+}
+
+.p-3{
+    padding:10px;
+}
+
+.p-10{
+    padding:4rem;
+}
+
+.container{
+    align-items: center;
+    justify-content: center;
+}
+.circle{
+    border-radius: 50%;
+}
+
+li{
+    cursor:pointer
+}
+.mt{
+    margin-top:5px;
+}
+
+.mb-10{
+    margin-bottom: 4rem;
+}
+
+/* animation */
+.container {
+    position: relative;
+    transition: transform 3s ease-in-out, opacity 1s ease-in-out;
+    opacity: 1;
+}
+
+@keyframes fly {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(-50px);
+        opacity: 1;
+    }}
+
+    .animate-fly {
+        animation: fly 1s forwards;
+    }
+    @media screen and (min-width: 500px)
+    {
+        .desktop{
+            display:none; 
+        }
+        .mobile{
+            display:block;
+        }
+    }
+   /* mobile */
+    @media screen and (max-width: 400px) {
+        *{
+            font-size: 11px;
+        }
+        .PersonalInfo{
+            text-align: center;
+            margin-inline: 0;
+        }
+        .desktop{
+            display:block; 
+            width: 10rem;
+            height: 10rem;
+        }
+        article{
+           margin-top:5rem;
+        }
+        .mobile{
+            display:none;
+        }
+  .projects{
+    margin-left:0 !important;
+  }
+  .mls{
+    position: relative;
+    right:10%;
+    margin-bottom: 8%;
+  }
+  .contactus{
+    margin-left:1.5rem !important;
+  }
+  input{
+    margin-left: 0!important;
+    
+  }
+  label{
+    margin-top: 1rem;;
+  }
+  .imgP{
+    width: 20rem;
+    height:10rem;
+  }
+
+    }
