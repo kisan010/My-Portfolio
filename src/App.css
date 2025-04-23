@@ -1,12 +1,12 @@
-.PersonalInfo , .Navbar {
-    margin-top:2rem;
-    margin-inline:6rem;
-}
+
 
 html,body{
     background-color: gainsboro
 }
-
+.PersonalInfo , .Navbar {
+    margin-top:2rem;
+    margin-inline:6rem;
+}
 .p-3{
     padding:10px;
 }
@@ -22,12 +22,24 @@ html,body{
 .circle{
     border-radius: 50%;
 }
+.NavLink {
+    cursor: pointer!important;
+  }
+  
 
 li{
-    cursor:pointer
+    cursor:pointer;
+   
+}
+a{
+    cursor: pointer !important;
 }
 .mt{
     margin-top:5px;
+}
+.mt-3{
+    margin-top:10px;
+    margin-bottom: 10px;
 }
 
 .mb-10{
@@ -41,10 +53,11 @@ li{
     opacity: 1;
 }
 
+
 @keyframes fly {
     from {
         transform: translateY(0);
-        opacity: 1;
+        opacity: 0;
     }
     to {
         transform: translateY(-50px);
@@ -82,6 +95,9 @@ li{
         }
         .mobile{
             display:none;
+        }
+        .mobile-font{
+            font-size: 35px!important;
         }
   .projects{
     margin-left:0 !important;

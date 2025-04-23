@@ -18,13 +18,13 @@ export const Navsection = () => {
           <small className="text-sm block text-gray-600">Web Developer</small></div>
         </div>
 
-  <>
+
         <div className="Navbar m-6 text-center">
           <ul className="flex gap-3 items-center justify-center">
             <li className="p-3 border-x border-b-gray-400  hover:text-amber-200 ">
               <NavLink
                 to="/Resume"
-                className={({ isActive, isPending }) =>
+                className={({ isActive }) =>
                   isActive? 'text-red-700':''
                 }
               >
@@ -45,9 +45,11 @@ export const Navsection = () => {
             </li>
           </ul>
         </div>
+        </div>
         </>
 
-      </div>
-    </>
+      
+        
+   
   );
 };

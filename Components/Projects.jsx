@@ -1,3 +1,5 @@
+import { Footer } from "./Footer"
+import { Navsection } from "./Navsection"
 
 
 
@@ -8,7 +10,8 @@ export  const Projects=()=>{
 
     return(
         <>
-         <div style={{ margin: "4.5rem" }}>
+        <Navsection />
+         <div style={{ margin: "5.5rem" }}>
         <h1 className="font-bold text-4xl">Projects</h1>
       </div>
 
@@ -101,6 +104,7 @@ export  const Projects=()=>{
       
         <br/><br/>
         </div>
+        <Footer />
         </>
     )
 }
