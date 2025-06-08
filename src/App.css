@@ -1,12 +1,38 @@
 
 
+
+@import "tailwindcss";
 html,body{
-    background-color: gainsboro
+    /* background-color: rgb(201, 165, 165); */
+    background-color:#2C98A0;
+    /* background-color: #38B2A3; */
+    /* color:#F9FCFF; */
+   color:#D0E3FF;
+   scroll-behavior: smooth;
+}
+:root{
+    font-size: 16px;
+}
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+.poppins-medium{
+    font-family:"poppins",sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
 .PersonalInfo , .Navbar {
     margin-top:2rem;
     margin-inline:6rem;
 }
+
 .p-3{
     padding:10px;
 }
@@ -47,26 +73,31 @@ a{
 }
 
 /* animation */
-.container {
+/* .container {
     position: relative;
     transition: transform 3s ease-in-out, opacity 1s ease-in-out;
     opacity: 1;
-}
+} */
 
 
-@keyframes fly {
+
+
+    .animate-fly {
+        animation: fly 1s forwards;
+    }
+    @keyframes fly {
     from {
         transform: translateY(0);
         opacity: 0;
     }
     to {
-        transform: translateY(-50px);
+        transform: translateY(-20px);
         opacity: 1;
     }}
 
-    .animate-fly {
-        animation: fly 1s forwards;
-    }
+
+
+
     @media screen and (min-width: 530px)
     {
         .desktop{
@@ -79,7 +110,7 @@ a{
    /* mobile */
     @media screen and (max-width: 500px) {
         *{
-            font-size: 12px;
+            font-size: 13px;
         }
         .PersonalInfo{
             text-align: center;
@@ -92,15 +123,22 @@ a{
         }
         article{
            margin-top:5rem;
+           & div{
+            padding:10px!important;
+           }
+        }
+        .hire{
+            gap:1.2rem!important;
         }
         .mobile{
             display:none;
         }
         .mobile-font{
-            font-size: 35px!important;
+            font-size: 25px!important;
         }
-  .projects{
-    margin-left:0 !important;
+
+  #projects{
+    margin: 3.5rem !important;
   }
   .mls{
     position: relative;
@@ -108,7 +146,12 @@ a{
     margin-bottom: 8%;
   }
   .contactus{
-    margin-left:1.5rem !important;
+    margin:1.5rem !important;
+    
+  }
+  .contactus:nth-child(2)
+  {
+    margin-top: 1rem!important;
   }
   input{
     margin-left: 0!important;
@@ -116,10 +159,39 @@ a{
   }
   label{
     margin-top: 1rem;;
+    margin-left:0!important;
   }
   .imgP{
     width: 20rem;
     height:10rem;
   }
-
+  #skills{
+    margin-inline: 2rem !important;
+    margin-block:8rem!important;
+  }
+.skill-set{
+    padding-inline:0!important
+}
+.title{
+    & h1{
+        font-size:  25px !important;
+    }
+}
+.h-screen{
+    height: 250px!important;
+    margin-bottom: 10rem;
+}
+/* section{
+    margin-block:10rem!important;
+} */
+ .bigfont{
+    font-size: 23px!important;
+ } 
+ .kisan{
+    font-size:15px!important;
+    letter-spacing: 1px;
+ }
+ svg{
+    height: 1.2rem!important;
+ }
     }
